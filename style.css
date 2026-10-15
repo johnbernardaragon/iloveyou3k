@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+:root { color-scheme: light; --rose: #c74768; --deep: #7b2441; --ink: #4b2935; --muted: #986f7b; --paper: #fffaf8; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-height: 100vh; color: var(--ink); background: #fff5f6; font-family: "DM Sans", sans-serif; overflow-x: hidden; }
+.ambient { position: fixed; width: 35rem; height: 35rem; border-radius: 50%; filter: blur(90px); opacity: .32; pointer-events: none; z-index: -1; }
+.ambient-one { background: #ffd4df; top: -17rem; left: -12rem; }
+.ambient-two { background: #f8d6c8; right: -18rem; bottom: -18rem; }
+.page { width: min(100% - 32px, 900px); margin: 0 auto; }
+.topline { text-align: center; padding: 28px 0 12px; font-size: .62rem; letter-spacing: .2em; color: #a77c89; font-weight: 700; }
+.tiny-heart { color: #d46d87; padding: 0 9px; }
+.hero { min-height: 610px; display: flex; align-items: center; flex-direction: column; justify-content: center; text-align: center; padding: 45px 0 70px; }
+.eyebrow { display: flex; gap: 10px; align-items: center; font-size: .64rem; letter-spacing: .19em; font-weight: 700; color: #b46b80; }
+.eyebrow span { width: 22px; height: 1px; background: #d7a0ae; }
+h1 { font-family: "Playfair Display", Georgia, serif; font-size: clamp(3rem, 8vw, 5.8rem); line-height: .99; font-weight: 500; letter-spacing: -.045em; margin: 26px 0 20px; color: #54293b; }
+h1 em { color: var(--rose); font-weight: 500; }
+.intro { max-width: 440px; margin: 0 auto; color: #8b6874; font-size: 1rem; line-height: 1.8; padding: 0 12px; }
+.letter-button { margin-top: 32px; padding: 15px 22px; display: inline-flex; align-items: center; gap: 12px; border: 1px solid #e8b8c4; border-radius: 999px; background: rgba(255,255,255,.65); color: #8d3652; font: 600 .9rem "DM Sans", sans-serif; cursor: pointer; box-shadow: 0 8px 24px #b94c6812; transition: transform .2s, box-shadow .2s, background .2s; }
+.letter-button:hover { transform: translateY(-3px); background: white; box-shadow: 0 12px 30px #b94c6820; }
+.envelope { font-size: 1.1rem; } .arrow { color: #cb7890; }
+.scroll-note { margin-top: 65px; color: #b38a96; letter-spacing: .22em; font-size: .58rem; font-weight: 700; }
+.scroll-note span { display: block; font-size: 1rem; margin-top: 10px; color: #d27c95; }
+.love-section { position: relative; padding: 58px 12px 75px; text-align: center; border-top: 1px solid #edcbd3; border-bottom: 1px solid #edcbd3; overflow: hidden; }
+.little-label { font-size: .62rem; letter-spacing: .18em; color: #ae7585; font-weight: 700; }
+.big-love { font-family: "Playfair Display", Georgia, serif; color: #c84366; font-weight: 700; font-size: clamp(5.8rem, 17vw, 10.5rem); letter-spacing: -.07em; line-height: .77; margin: 35px 0 27px; text-shadow: 0 5px 0 #f9dce3; }
+.big-love span { color: #8f2e4c; }
+.big-love b { display: inline-block; font-family: "DM Sans", sans-serif; font-size: .22em; vertical-align: top; letter-spacing: -.05em; margin: .2em 0 0 .25em; color: #d56883; }
+.love-subtitle { font-family: "Playfair Display", Georgia, serif; font-style: italic; color: #9a6b79; font-size: 1.15rem; }
+.heart-line { display: flex; justify-content: center; align-items: center; gap: 14px; color: #d67a91; margin-top: 28px; font-size: .8rem; }
+.heart-line span { width: 45px; height: 1px; background: #e8b5c1; }
+.sparkle { position: absolute; color: #df9bad; font-size: 2rem; }
+.sparkle-left { left: 9%; top: 28%; } .sparkle-right { right: 10%; bottom: 24%; }
+.letter-card { max-width: 680px; margin: 60px auto 30px; padding: clamp(24px, 6vw, 54px); background: rgba(255,255,255,.78); border: 1px solid #f0d6dc; border-radius: 5px 28px 5px 28px; box-shadow: 0 20px 60px #8e34450d; animation: arrive .65s ease both; }
+.letter-top { display: flex; align-items: center; justify-content: center; gap: 13px; font-size: .58rem; letter-spacing: .2em; color: #bd8292; font-weight: 700; }
+.letter-top span:first-child, .letter-top span:last-child { font-size: 1rem; color: #d27a92; }
+.letter-card h2 { font-family: "Playfair Display", Georgia, serif; font-size: clamp(2.1rem, 6vw, 3.5rem); text-align: center; color: #9a3554; font-weight: 500; margin: 25px 0 30px; }
+.letter-card p { font-size: .98rem; line-height: 1.95; color: #74535f; margin: 0 0 18px; }
+.letter-card .signature { text-align: right; margin-top: 30px; font-family: "Playfair Display", Georgia, serif; font-style: italic; color: #9c4963; }
+.signature span { display: block; font-size: 1.2rem; margin-top: 8px; }
+.closing { text-align: center; padding: 70px 0 40px; }
+.tiny-flower { font-size: 2rem; color: #ce7e94; }
+.closing p { font-family: "Playfair Display", Georgia, serif; font-style: italic; font-size: clamp(1.15rem, 3vw, 1.6rem); color: #7f4b5b; margin: 20px auto 10px; }
+.closing .closing-small { font-family: "DM Sans", sans-serif; font-size: .8rem; font-style: normal; color: #a47d89; }
+.closing-heart { font-size: 1.8rem; color: #ce6c87; margin-top: 22px; }
+footer { padding: 20px 0 28px; text-align: center; color: #b28b96; font-size: .55rem; font-weight: 700; letter-spacing: .2em; }
+footer span { color: #d46d87; padding-left: 5px; }
+.hearts-layer { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 10; }
+.floating-heart { position: absolute; bottom: -35px; color: #d76582; animation: float-up 3.6s ease-in forwards; opacity: 0; }
+[hidden] { display: none !important; }
+@keyframes arrive { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes float-up { 0% { transform: translateY(0) rotate(0deg) scale(.7); opacity: 0; } 15% { opacity: .8; } 100% { transform: translateY(-110vh) rotate(25deg) scale(1.25); opacity: 0; } }
+@media (max-width: 600px) { .hero { min-height: 560px; } .topline { font-size: .52rem; letter-spacing: .14em; } .love-section { padding: 52px 4px 60px; } .sparkle-left { left: 2%; } .sparkle-right { right: 3%; } .letter-card p { font-size: .92rem; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
